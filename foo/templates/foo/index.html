@@ -1,3 +1,4 @@
+{% load static %}
 {% load unicorn %}
 <html>
   <head>
@@ -6,5 +7,6 @@
   <body>
     {% csrf_token %}
     {% unicorn 'parent' %}
+    <script src="{% static 'foo/main.js' %}"></script>
   </body>
 </html>

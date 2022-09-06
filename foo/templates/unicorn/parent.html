@@ -3,6 +3,8 @@
   Hello world!
   <button unicorn:click='toggle'>toggle</button>
   <div>
-    {% unicorn active_view %}
+    {% if active_view %}
+    {% unicorn active_view key=active_view %}
+    {% endif %}
   </div>
 </div>
