@@ -1,3 +1,8 @@
+{% load unicorn %}
 <div>
-    <!-- put component code here -->
+  Hello world!
+  <button unicorn:click='toggle'>toggle</button>
+  <div>
+    {% unicorn active_view %}
+  </div>
 </div>
